@@ -10,7 +10,7 @@ export  default function Player() {
      return (
         <section style={{ padding: "0.7em", border: "1px solid white "}}>
             <h2>Player Score</h2>
-            <p style={{ color: estGagnant ? "green" : "red"}} - {score}>
+            <p style={{ color: estGagnant ? "green" : "red"}} > {score}>
             </p>
         </section>
      )
