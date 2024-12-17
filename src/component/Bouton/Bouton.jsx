@@ -1,10 +1,14 @@
-export function Bouton() {
+export function Bouton({ couleur}) {
 
     return (
-
-        <footer>
-            <p>p</p>
-        </footer>
+        <button style={{
+            backgroundColor: couleur ? couleur : "black",
+            color: "whitesmoke",
+          border: "none",
+          borderRadius: "5px"
+         }}>
+        Valider
+        </button>
     )
 }
 
