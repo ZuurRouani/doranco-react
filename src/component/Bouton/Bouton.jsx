@@ -1,13 +1,14 @@
-export function Bouton({ couleur}) {
+export function Bouton( props) {
 
     return (
         <button style={{
-            backgroundColor: couleur ? couleur : "black",
-            color: "whitesmoke",
-          border: "none",
-          borderRadius: "5px"
+        backgroundColor: props.couleur ? props.couleur ,
+        color: "whitesmoke",
+        padding: "0.7em",
+        border: "none",
+        borderRadius: "5px"
          }}>
-        Valider
+        {props.children}
         </button>
     )
 }
