@@ -1,10 +1,15 @@
-export function Bouton() {
+export function Bouton( props) {
 
     return (
-
-        <footer>
-            <p>p</p>
-        </footer>
+        <button style={{
+        backgroundColor: props.couleur ? props.couleur ,
+        color: "whitesmoke",
+        padding: "0.7em",
+        border: "none",
+        borderRadius: "5px"
+         }}>
+        {props.children}
+        </button>
     )
 }
 
